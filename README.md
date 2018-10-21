@@ -5,7 +5,7 @@
 ## 概要
 
 - SBC8080ルーズキットバスにつながる128kBバンクメモリーボードです。
-  - [Z80 CPUボード(KZ80-CPUB)](https://github.com/kuninet/Z80_CPUB/wiki)、[SBC8080](https://vintagechips.wordpress.com/2018/06/24/sbc8080-cpu%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%AD%E3%83%83%E3%83%88/)、[SBC8085](https://vintagechips.wordpress.com/2018/08/27/sbc8085%e3%81%8c%e5%ae%8c%e6%88%90/)での稼働を確認しています。
+  - [Z80 CPUボード(KZ80-CPUB)](https://github.com/kuninet/Z80_CPUB/wiki)、[SBC8080](https://vintagechips.wordpress.com/2018/06/24/sbc8080-cpu%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%AD%E3%83%83%E3%83%88/)、[SBC8085](https://vintagechips.wordpress.com/2018/08/27/sbc8085%e3%81%8c%e5%ae%8c%e6%88%90/)と組み合わせた稼働を確認しています。
   - ROM領域は16kB(0000h〜3FFFh)です。
   - 固定RAM領域は16kB(4000h〜7FFFh)です。
   - バンクメモリー領域はアドレス8000h〜FFFFhに32kBx3バンクあります。
