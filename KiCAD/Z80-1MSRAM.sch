@@ -1375,6 +1375,26 @@ Wire Wire Line
 	5200 9000 5200 9450
 Wire Wire Line
 	5200 9450 5200 9750
+$Comp
+L Device:CP C8
+U 1 1 5BD00A96
+P 5200 6500
+F 0 "C8" H 5318 6546 50  0000 L CNN
+F 1 "10u" H 5318 6455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5238 6350 50  0001 C CNN
+F 3 "~" H 5200 6500 50  0001 C CNN
+	1    5200 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6250 5200 6250
+Wire Wire Line
+	5200 6250 5200 6350
+Connection ~ 4900 6250
+Wire Wire Line
+	4900 6750 5200 6750
+Wire Wire Line
+	5200 6750 5200 6650
 Wire Bus Line
 	6750 2700 6750 3250
 Wire Bus Line
@@ -1397,4 +1417,49 @@ Wire Bus Line
 	14500 2300 14500 6650
 Wire Bus Line
 	12400 2600 12400 7350
+Connection ~ 4900 6750
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5BD26C95
+P 1350 8050
+F 0 "MH1" H 1450 8096 50  0000 L CNN
+F 1 "MountingHole" H 1450 8005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1350 8050 50  0001 C CNN
+F 3 "~" H 1350 8050 50  0001 C CNN
+	1    1350 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5BD26CF9
+P 1350 8350
+F 0 "MH2" H 1450 8396 50  0000 L CNN
+F 1 "MountingHole" H 1450 8305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1350 8350 50  0001 C CNN
+F 3 "~" H 1350 8350 50  0001 C CNN
+	1    1350 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5BD26D50
+P 1350 8650
+F 0 "MH3" H 1450 8696 50  0000 L CNN
+F 1 "MountingHole" H 1450 8605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1350 8650 50  0001 C CNN
+F 3 "~" H 1350 8650 50  0001 C CNN
+	1    1350 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5BD26DAA
+P 1350 8950
+F 0 "MH4" H 1450 8996 50  0000 L CNN
+F 1 "MountingHole" H 1450 8905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1350 8950 50  0001 C CNN
+F 3 "~" H 1350 8950 50  0001 C CNN
+	1    1350 8950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
