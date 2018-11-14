@@ -27,7 +27,8 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 ## 機械語モニタ+TinyBASICについて
 
 - [SBC8080データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc8080_datapack.zip)の機械語モニタ+TinyBASICを使用する場合、使用しているRAM領域(8000h〜FFFFh)をバンク切り替えする仕様となっているためRAMアドレス等を変更する必要があります。
-  - [MON-TB](MON-TB/)ディレクトリにアドレス変更等を対応したソース/ROM焼き用のHEXファイルを添付しました。ご参考まで。
+  - [MON-TB](MON-TB/)ディレクトリにアドレス変更等を対応したソース/ROM焼き用のHEXファイルを添付しました。
+  - https://github.com/kuninet/Z80_1MRAMB/tree/master/MON-TB
 
 ## ライセンス
 
