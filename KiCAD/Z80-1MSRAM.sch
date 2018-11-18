@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SBC8080 128k MEMORY BOARD"
-Date "2018/8/8"
-Rev ""
+Date "2018-11-18"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1395,28 +1395,6 @@ Wire Wire Line
 	4900 6750 5200 6750
 Wire Wire Line
 	5200 6750 5200 6650
-Wire Bus Line
-	6750 2700 6750 3250
-Wire Bus Line
-	2350 2200 14400 2200
-Wire Bus Line
-	9650 2700 9650 3800
-Wire Bus Line
-	2200 2600 12400 2600
-Wire Bus Line
-	2250 2300 2250 4000
-Wire Bus Line
-	3400 2300 3400 4000
-Wire Bus Line
-	6450 2300 6450 5850
-Wire Bus Line
-	2100 2700 2100 5200
-Wire Bus Line
-	3600 2700 3600 5200
-Wire Bus Line
-	14500 2300 14500 6650
-Wire Bus Line
-	12400 2600 12400 7350
 Connection ~ 4900 6750
 $Comp
 L Mechanical:MountingHole MH1
@@ -1462,4 +1440,26 @@ F 3 "~" H 1350 8950 50  0001 C CNN
 	1    1350 8950
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	6750 2700 6750 3250
+Wire Bus Line
+	2350 2200 14400 2200
+Wire Bus Line
+	9650 2700 9650 3800
+Wire Bus Line
+	2200 2600 12400 2600
+Wire Bus Line
+	2250 2300 2250 4000
+Wire Bus Line
+	3400 2300 3400 4000
+Wire Bus Line
+	6450 2300 6450 5850
+Wire Bus Line
+	2100 2700 2100 5200
+Wire Bus Line
+	3600 2700 3600 5200
+Wire Bus Line
+	14500 2300 14500 6650
+Wire Bus Line
+	12400 2600 12400 7350
 $EndSCHEMATC
