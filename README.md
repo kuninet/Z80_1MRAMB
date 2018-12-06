@@ -22,6 +22,10 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 
 ※LibreOffice/OpenOfficeのcalcで開ける形式となっています。
 
+★☆ 注意 ☆★
+REV2基板ではバンクレジスタ用ICを74HC573から74HC74へ変更しています。
+
+
 ## 機械語モニタ+TinyBASICについて
 
 - [SBC8080データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc8080_datapack.zip)の機械語モニタ+TinyBASICを使用する場合、使用しているRAM領域(8000h〜FFFFh)をバンク切り替えする仕様となっているためRAMアドレス等を変更する必要があります。
@@ -37,6 +41,6 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 - [SBC8080バスにつながる128kBメモリーボード(1)](https://kuninet.wordpress.com/2018/08/11/sbc8080バスにつながる128kbメモリーボード1/)
 - [SBC8080バスにつながる128kBメモリーボード(2)](https://kuninet.wordpress.com/2018/08/12/sbc8080バスにつながる128kbメモリーボード2/)
 - [SBC8080バスにつながる128kBメモリーボード(3)](https://kuninet.wordpress.com/2018/08/13/sbc8080バスにつながる128kbメモリーボード3/)
-  - 【注意】上記のBLOGの試作記事ではI/Oアドレスを40hにしていますが、当基板では80hへ変更しています。
+  - 【注意】上記のBLOGの試作記事ではI/Oアドレスを40hにしていますが、当基板(REV1、1.1)では80hへ変更しています。
   
 - [KZ80-1MSRAM Rev.1 リリース0.9](https://kuninet.wordpress.com/2018/10/21/kz80-1msram-rev-1-%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b90-9/)
