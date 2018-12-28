@@ -16,6 +16,8 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 
 [回路図はこちら](image/Z80-1MSRAM.pdf)です。
 
+![回路図](https://github.com/kuninet/Z80_1MRAMB/blob/master/image/Z80-1MSRAM.jpg)
+
 ## 部品表
 
 [部品表はこちら](KiCAD/Z80-1MSRAM.ods)です。
