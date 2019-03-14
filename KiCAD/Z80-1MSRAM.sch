@@ -16,17 +16,6 @@ Comment4 ""
 $EndDescr
 Entry Bus Bus
 	8200 2600 8300 2700
-$Comp
-L Z80-1MSRAM-rescue:GND #PWR01
-U 1 1 5B6AD801
-P 5000 3850
-F 0 "#PWR01" H 5000 3600 50  0001 C CNN
-F 1 "GND" H 5000 3700 50  0000 C CNN
-F 2 "" H 5000 3850 50  0001 C CNN
-F 3 "" H 5000 3850 50  0001 C CNN
-	1    5000 3850
-	1    0    0    -1  
-$EndComp
 Entry Wire Line
 	4850 3100 4950 3200
 Entry Wire Line
@@ -34,9 +23,9 @@ Entry Wire Line
 Entry Bus Bus
 	4750 2600 4850 2700
 Text Label 5000 3200 0    60   ~ 0
-A7
-Text Label 5000 3350 0    60   ~ 0
 A6
+Text Label 5000 3350 0    60   ~ 0
+A5
 Entry Bus Bus
 	4200 2200 4300 2300
 Text GLabel 4650 4600 0    60   Input ~ 0
@@ -466,7 +455,7 @@ U 1 1 5B6C7306
 P 9900 7900
 F 0 "R1" V 9980 7900 50  0000 C CNN
 F 1 "1k" V 9900 7900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 7900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 7900 50  0001 C CNN
 F 3 "" H 9900 7900 50  0001 C CNN
 	1    9900 7900
 	0    1    1    0   
@@ -477,7 +466,7 @@ U 1 1 5B6C73AF
 P 9900 8250
 F 0 "R2" V 9980 8250 50  0000 C CNN
 F 1 "1k" V 9900 8250 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 8250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 8250 50  0001 C CNN
 F 3 "" H 9900 8250 50  0001 C CNN
 	1    9900 8250
 	0    1    1    0   
@@ -665,10 +654,6 @@ F 3 "" H 9250 5700 50  0001 C CNN
 	1    9250 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 3700 5000 3850
-Wire Wire Line
-	5200 3700 5000 3700
 Wire Wire Line
 	5200 3200 4950 3200
 Wire Wire Line
@@ -1547,6 +1532,124 @@ DA1
 NoConn ~ 2550 4200
 Wire Wire Line
 	2000 4400 2550 4400
+$Comp
+L Device:R_US R4
+U 1 1 5C8B2A5C
+P 4000 6250
+F 0 "R4" V 3900 6250 50  0000 C CNN
+F 1 "100k" V 4100 6250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4040 6240 50  0001 C CNN
+F 3 "~" H 4000 6250 50  0001 C CNN
+	1    4000 6250
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 6250 0    60   Input ~ 0
+A7
+Wire Wire Line
+	3500 6250 3850 6250
+Wire Wire Line
+	4900 3700 5200 3700
+Text GLabel 4900 3700 0    60   Input ~ 0
+ADDR_SEL
+Text GLabel 5500 6350 2    60   Input ~ 0
+ADDR_SEL
+$Comp
+L Transistor_BJT:2SC1815 Q1
+U 1 1 5C8F8440
+P 4500 6250
+F 0 "Q1" H 4691 6296 50  0000 L CNN
+F 1 "2SC1815" H 4691 6205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 4700 6175 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 4500 6250 50  0001 L CNN
+	1    4500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6250 4300 6250
+$Comp
+L Device:R_US R5
+U 1 1 5C90FB06
+P 4600 5800
+F 0 "R5" V 4500 5800 50  0000 C CNN
+F 1 "1k" V 4700 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4640 5790 50  0001 C CNN
+F 3 "~" H 4600 5800 50  0001 C CNN
+	1    4600 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5C93E913
+P 4600 5550
+F 0 "#PWR0101" H 4600 5400 50  0001 C CNN
+F 1 "VCC" H 4617 5723 50  0000 C CNN
+F 2 "" H 4600 5550 50  0001 C CNN
+F 3 "" H 4600 5550 50  0001 C CNN
+	1    4600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5550 4600 5650
+Wire Wire Line
+	4600 5950 4600 6000
+$Comp
+L Z80-1MSRAM-rescue:GND #PWR0102
+U 1 1 5C96DD5E
+P 4600 6550
+F 0 "#PWR0102" H 4600 6300 50  0001 C CNN
+F 1 "GND" H 4600 6400 50  0000 C CNN
+F 2 "" H 4600 6550 50  0001 C CNN
+F 3 "" H 4600 6550 50  0001 C CNN
+	1    4600 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6450 4600 6550
+Text GLabel 5700 6000 2    60   Input ~ 0
+A7
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 5C985EE7
+P 5300 6000
+F 0 "JP1" H 5300 6224 50  0000 C CNN
+F 1 "A7_Jumper" H 5300 6133 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5300 6000 50  0001 C CNN
+F 3 "~" H 5300 6000 50  0001 C CNN
+	1    5300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6000 5050 6000
+Connection ~ 4600 6000
+Wire Wire Line
+	4600 6000 4600 6050
+Wire Wire Line
+	5700 6000 5550 6000
+Wire Wire Line
+	5300 6150 5300 6350
+Wire Wire Line
+	5300 6350 5500 6350
+Text Notes 5500 6150 0    60   ~ 0
+0xh-6xh
+Text Notes 4800 6150 0    60   ~ 0
+8xh-Exh
+Text Label 5550 6000 0    60   ~ 0
+A7
+Text Label 3550 6250 0    60   ~ 0
+A7
+$Comp
+L Z80-1MSRAM-rescue:PWR_FLAG #FLG0101
+U 1 1 5CA0C77E
+P 5300 6550
+F 0 "#FLG0101" H 5300 6625 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 6700 50  0000 C CNN
+F 2 "" H 5300 6550 50  0001 C CNN
+F 3 "" H 5300 6550 50  0001 C CNN
+	1    5300 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 6550 5300 6350
 Wire Bus Line
 	4850 2700 4850 3250
 Wire Bus Line
@@ -1569,4 +1672,5 @@ Wire Bus Line
 	14500 2300 14500 6650
 Wire Bus Line
 	12400 2600 12400 7350
+Connection ~ 5300 6350
 $EndSCHEMATC
