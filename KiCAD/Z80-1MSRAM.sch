@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SBC8080 128k MEMORY BOARD"
-Date "2018-11-29"
-Rev "2"
+Date "2019-03-16"
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1650,6 +1650,7 @@ F 3 "" H 5300 6550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 6550 5300 6350
+Connection ~ 5300 6350
 Wire Bus Line
 	4850 2700 4850 3250
 Wire Bus Line
@@ -1672,5 +1673,4 @@ Wire Bus Line
 	14500 2300 14500 6650
 Wire Bus Line
 	12400 2600 12400 7350
-Connection ~ 5300 6350
 $EndSCHEMATC
