@@ -6,8 +6,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SBC8080 128k MEMORY BOARD"
-Date "2019-03-16"
-Rev "2.1"
+Date "2019-09-07"
+Rev "3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -387,10 +387,10 @@ F 3 "" H 9400 3400 50  0001 C CNN
 	2    9400 3400
 	1    0    0    -1  
 $EndComp
-Text Label 8400 3300 0    60   ~ 0
+Text Label 8200 2950 2    60   ~ 0
 A14
 Entry Wire Line
-	8300 3200 8400 3300
+	8300 2850 8200 2950
 NoConn ~ 10250 3300
 NoConn ~ 10250 3500
 NoConn ~ 10250 3700
@@ -806,8 +806,6 @@ Wire Wire Line
 	8400 5900 8300 5900
 Wire Wire Line
 	8400 5450 8200 5450
-Wire Wire Line
-	8550 3300 8400 3300
 Wire Wire Line
 	8550 3650 8400 3650
 Wire Wire Line
@@ -1536,8 +1534,8 @@ $Comp
 L Device:R_US R4
 U 1 1 5C8B2A5C
 P 4000 6250
-F 0 "R4" V 3900 6250 50  0000 C CNN
-F 1 "100k" V 4100 6250 50  0000 C CNN
+F 0 "R4" V 4100 6100 50  0000 C CNN
+F 1 "100k" V 4100 6350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4040 6240 50  0001 C CNN
 F 3 "~" H 4000 6250 50  0001 C CNN
 	1    4000 6250
@@ -1546,7 +1544,7 @@ $EndComp
 Text GLabel 3500 6250 0    60   Input ~ 0
 A7
 Wire Wire Line
-	3500 6250 3850 6250
+	3500 6250 3750 6250
 Wire Wire Line
 	4900 3700 5200 3700
 Text GLabel 4900 3700 0    60   Input ~ 0
@@ -1565,7 +1563,7 @@ F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 4
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 6250 4300 6250
+	4150 6250 4250 6250
 $Comp
 L Device:R_US R5
 U 1 1 5C90FB06
@@ -1651,24 +1649,87 @@ $EndComp
 Wire Wire Line
 	5300 6550 5300 6350
 Connection ~ 5300 6350
-Wire Bus Line
-	4850 2700 4850 3250
+$Comp
+L Device:C C9
+U 1 1 5CA0558F
+P 4000 6000
+F 0 "C9" V 3950 5850 50  0000 C CNN
+F 1 "22p" V 3950 6150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4038 5850 50  0001 C CNN
+F 3 "~" H 4000 6000 50  0001 C CNN
+	1    4000 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 6000 3750 6000
+Wire Wire Line
+	3750 6000 3750 6250
+Connection ~ 3750 6250
+Wire Wire Line
+	3750 6250 3850 6250
+Wire Wire Line
+	4150 6000 4250 6000
+Wire Wire Line
+	4250 6000 4250 6250
+Connection ~ 4250 6250
+Wire Wire Line
+	4250 6250 4300 6250
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 5D76E08D
+P 7950 3300
+F 0 "JP2" V 8100 3350 50  0000 L CNN
+F 1 "16k/32k" V 8200 3350 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7950 3300 50  0001 C CNN
+F 3 "~" H 7950 3300 50  0001 C CNN
+	1    7950 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 2950 7950 3050
+Wire Wire Line
+	7950 2950 8200 2950
+Wire Wire Line
+	7950 3550 7950 3650
+Wire Wire Line
+	7950 3650 8400 3650
+Connection ~ 8400 3650
+Wire Wire Line
+	8550 3300 8500 3300
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D846A51
+P 8500 3350
+F 0 "#FLG0102" H 8500 3425 50  0001 C CNN
+F 1 "PWR_FLAG" H 8500 3523 50  0000 C CNN
+F 2 "" H 8500 3350 50  0001 C CNN
+F 3 "~" H 8500 3350 50  0001 C CNN
+	1    8500 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 3300 8500 3350
+Connection ~ 8500 3300
+Wire Wire Line
+	8500 3300 8100 3300
 Wire Bus Line
 	4300 2300 4300 5000
+Wire Bus Line
+	4850 2700 4850 3250
 Wire Bus Line
 	2350 2200 14400 2200
 Wire Bus Line
 	8300 2700 8300 3800
 Wire Bus Line
-	3400 2300 3400 4000
+	2200 2600 12400 2600
 Wire Bus Line
 	2250 2300 2250 4000
 Wire Bus Line
-	2200 2600 12400 2600
-Wire Bus Line
-	3600 2700 3600 5200
+	3400 2300 3400 4000
 Wire Bus Line
 	2100 2700 2100 5200
+Wire Bus Line
+	3600 2700 3600 5200
 Wire Bus Line
 	14500 2300 14500 6650
 Wire Bus Line

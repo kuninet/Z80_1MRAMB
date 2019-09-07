@@ -1,4 +1,4 @@
-(pcb "/Users/kuninet/git3/Z80_1MRAMB/KiCAD/Z80-1MSRAM.dsn"
+(pcb "/Users/kuninet/Box Sync/git/git3/Z80_1MRAMB/KiCAD/Z80-1MSRAM.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -34,7 +34,11 @@
   )
   (placement
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place JP2 105400 -85000 front 0 (PN 16k/32k))
       (place JP1 110327 -107980 front 90 (PN A7_Jumper))
+    )
+    (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (place C9 129921 -118110 front 270 (PN 22p))
     )
     (component "Package_TO_SOT_THT:TO-92L_Inline_Wide"
       (place Q1 132654 -119710 front 0 (PN 2SC1815))
@@ -119,6 +123,20 @@
       (pin Rect[A]Pad_1700x1700_um 1 0 0)
       (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
       (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+    )
+    (image Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
+      (outline (path signal 100  -250 800  -250 -800))
+      (outline (path signal 100  -250 -800  2750 -800))
+      (outline (path signal 100  2750 -800  2750 800))
+      (outline (path signal 100  2750 800  -250 800))
+      (outline (path signal 120  621 920  1879 920))
+      (outline (path signal 120  621 -920  1879 -920))
+      (outline (path signal 50  -1050 1050  -1050 -1050))
+      (outline (path signal 50  -1050 -1050  3550 -1050))
+      (outline (path signal 50  3550 -1050  3550 1050))
+      (outline (path signal 50  3550 1050  -1050 1050))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Round[A]Pad_1600_um 2 2500 0)
     )
     (image "Package_TO_SOT_THT:TO-92L_Inline_Wide"
       (outline (path signal 120  600 -1700  4450 -1700))
@@ -1013,8 +1031,8 @@
         U4-14 U5-14 U6-32 C1-1 C2-1 C3-1 C4-1 C5-1 C6-1 C7-1 C8-1)
     )
     (net GND
-      (pins Q1-1 U2-7 U7-14 J1-2 J1-4 U1-7 U3-15 U3-8 U4-7 U5-7 U6-22 U6-16 C1-2 C2-2
-        C3-2 C4-2 C5-2 C6-2 C7-2 C8-2)
+      (pins JP2-1 Q1-1 U2-7 U7-14 J1-2 J1-4 U1-7 U3-15 U3-8 U4-7 U5-7 U6-22 U6-16
+        C1-2 C2-2 C3-2 C4-2 C5-2 C6-2 C7-2 C8-2)
     )
     (net /D0
       (pins U2-2 U7-11 J1-9 U6-13)
@@ -1089,7 +1107,7 @@
       (pins U7-26 J1-38 U6-28)
     )
     (net /A14
-      (pins U7-1 J1-39 U3-14 U6-3)
+      (pins JP2-3 U7-1 J1-39 U6-3)
     )
     (net /A15
       (pins J1-40 U3-13 U5-2 U5-9 U5-13)
@@ -1203,24 +1221,28 @@
       (pins JP1-1 Q1-2 R5-1)
     )
     (net A7
-      (pins JP1-3 R4-2 U7-3 J1-32 U6-5)
-    )
-    (net "Net-(Q1-Pad3)"
-      (pins Q1-3 R4-1)
+      (pins C9-2 JP1-3 R4-2 U7-3 J1-32 U6-5)
     )
     (net ADDR_SEL
       (pins JP1-2 U3-1)
     )
+    (net "Net-(C9-Pad1)"
+      (pins C9-1 Q1-3 R4-1)
+    )
+    (net "Net-(JP2-Pad2)"
+      (pins JP2-2 U3-14)
+    )
     (class kicad_default "" /A0 /A1 /A10 /A11 /A12 /A13 /A14 /A15 /A2 /A3
       /A4 /A5 /A6 /A8 /A9 /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7 /DA0 /DA1 /MEMA15
-      /MEMA16 A7 ADDR_SEL "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad1)"
-      "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(J1-Pad17)" "Net-(J1-Pad22)"
-      "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad7)"
-      "Net-(J1-Pad8)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)"
-      "Net-(J2-Pad7)" "Net-(JP1-Pad1)" "Net-(Q1-Pad3)" "Net-(U1-Pad1)" "Net-(U1-Pad10)"
-      "Net-(U1-Pad13)" "Net-(U1-Pad4)" "Net-(U1-Pad8)" "Net-(U2-Pad13)" "Net-(U2-Pad6)"
-      "Net-(U2-Pad8)" "Net-(U3-Pad10)" "Net-(U3-Pad11)" "Net-(U3-Pad9)" "Net-(U4-Pad2)"
-      "Net-(U4-Pad3)" "Net-(U5-Pad3)" "Net-(U5-Pad5)" RES ~IOWR ~MEMRD ~MEMWR
+      /MEMA16 A7 ADDR_SEL "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
+      "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(J1-Pad17)"
+      "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad5)" "Net-(J1-Pad6)"
+      "Net-(J1-Pad7)" "Net-(J1-Pad8)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)"
+      "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(JP1-Pad1)" "Net-(JP2-Pad2)" "Net-(U1-Pad1)"
+      "Net-(U1-Pad10)" "Net-(U1-Pad13)" "Net-(U1-Pad4)" "Net-(U1-Pad8)" "Net-(U2-Pad13)"
+      "Net-(U2-Pad6)" "Net-(U2-Pad8)" "Net-(U3-Pad10)" "Net-(U3-Pad11)" "Net-(U3-Pad9)"
+      "Net-(U4-Pad2)" "Net-(U4-Pad3)" "Net-(U5-Pad3)" "Net-(U5-Pad5)" RES
+      ~IOWR ~MEMRD ~MEMWR
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

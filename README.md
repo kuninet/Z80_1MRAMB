@@ -7,26 +7,9 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 ## 概要
 
 - SBC8080ルーズキットバスにつながる128kBバンクメモリーボードです。
-  - [Z80 CPUボード(KZ80-CPUB)](https://github.com/kuninet/Z80_CPUB/wiki)、[SBC8080](https://vintagechips.wordpress.com/2018/06/24/sbc8080-cpu%E3%83%AB%E3%83%BC%E3%82%BA%E3%82%AD%E3%83%83%E3%83%88/)、[SBC8085](https://vintagechips.wordpress.com/2018/08/27/sbc8085%e3%81%8c%e5%ae%8c%e6%88%90/)と組み合わせた稼働を確認しています。
-  - ROM領域は16kB(0000h〜3FFFh)です。
-  - 固定RAM領域は16kB(4000h〜7FFFh)です。
-  - バンクメモリー領域はアドレス8000h〜FFFFhに32kBx3バンクあります。
-
-## 回路図
-
-[回路図はこちら](image/Z80-1MSRAM-REV2.pdf)です。
-
-![回路図](https://github.com/kuninet/Z80_1MRAMB/blob/master/image/Z80-1MSRAM-REV2.jpg)
-
-## 部品表
-
-[部品表はこちら](KiCAD/Z80-1MSRAM.ods)です。
-
-※LibreOffice/OpenOfficeのcalcで開ける形式となっています。
-
-★☆ 注意 ☆★
-REV2基板ではバンクレジスタ用ICを74HC573から74HC74へ変更しています。
-
+  - REV1 : 16kB ROM + 16kB固定RAM + 32kB 3バンクメモリー
+  - REV2 ; 上記に加えて 64kBフルRAMモード装備
+  - REV3 : ROM 32kジャンパ装備。アドレスデコード改良
 
 ## 機械語モニタ+TinyBASICについて
 
