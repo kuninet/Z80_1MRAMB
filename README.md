@@ -23,12 +23,12 @@ https://github.com/kuninet/Z80_1MRAMB/wiki
 
 ## 参考リンク
 
-- [SBC8080バスにつながる128kBメモリーボード(1)](https://kuninet.wordpress.com/2018/08/11/sbc8080バスにつながる128kbメモリーボード1/)
-- [SBC8080バスにつながる128kBメモリーボード(2)](https://kuninet.wordpress.com/2018/08/12/sbc8080バスにつながる128kbメモリーボード2/)
-- [SBC8080バスにつながる128kBメモリーボード(3)](https://kuninet.wordpress.com/2018/08/13/sbc8080バスにつながる128kbメモリーボード3/)
+- [SBC8080バスにつながる128kBメモリーボード(1)](https://kuninet.org/2018/08/11/sbc8080バスにつながる128kbメモリーボード1/)
+- [SBC8080バスにつながる128kBメモリーボード(2)](https://kuninet.org/2018/08/12/sbc8080バスにつながる128kbメモリーボード2/)
+- [SBC8080バスにつながる128kBメモリーボード(3)](https://kuninet.org/2018/08/13/sbc8080バスにつながる128kbメモリーボード3/)
   - 【注意】上記のBLOGの試作記事ではI/Oアドレスを40hにしていますが、当基板(REV1、1.1)では80hへ変更しています。
   
 - KZ80-1MSRAM Rev.1 リリース0.9
-  - [https://kuninet.wordpress.com/2018/10/21/kz80-1msram-rev-1-%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b90-9/](https://kuninet.wordpress.com/2018/10/21/kz80-1msram-rev-1-%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b90-9/)
+  - [https://kuninet.org/2018/10/21/kz80-1msram-rev-1-%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b90-9/](https://kuninet.wordpress.com/2018/10/21/kz80-1msram-rev-1-%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b90-9/)
 - KZ80/SBC80系 128kBメモリーボード REV2
-  - [https://kuninet.wordpress.com/2018/12/28/kz80-sbc80%e7%b3%bb-128kb%e3%83%a1%e3%83%a2%e3%83%aa%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%89-rev2/](https://kuninet.wordpress.com/2018/12/28/kz80-sbc80%e7%b3%bb-128kb%e3%83%a1%e3%83%a2%e3%83%aa%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%89-rev2/)
+  - [https://kuninet.org/2018/12/28/kz80-sbc80%e7%b3%bb-128kb%e3%83%a1%e3%83%a2%e3%83%aa%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%89-rev2/](https://kuninet.wordpress.com/2018/12/28/kz80-sbc80%e7%b3%bb-128kb%e3%83%a1%e3%83%a2%e3%83%aa%e3%83%bc%e3%83%9c%e3%83%bc%e3%83%89-rev2/)
