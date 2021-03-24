@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:Z80-1MSRAM-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "SBC8080 128k MEMORY BOARD"
-Date "2019-09-07"
-Rev "3"
+Date "2021-03-22"
+Rev "4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -766,11 +766,7 @@ Connection ~ 12150 5600
 Wire Wire Line
 	8400 3150 8550 3150
 Wire Wire Line
-	11250 4950 11250 5400
-Wire Wire Line
 	10400 7900 10400 7550
-Wire Wire Line
-	11250 5400 11850 5400
 Wire Wire Line
 	9600 5350 9750 5350
 Wire Wire Line
@@ -831,8 +827,6 @@ Wire Wire Line
 Wire Wire Line
 	10150 8250 10150 7900
 Connection ~ 10150 7900
-Wire Wire Line
-	11850 5400 11850 5500
 Wire Wire Line
 	11850 5500 12800 5500
 Wire Wire Line
@@ -1507,11 +1501,6 @@ Wire Wire Line
 Text GLabel 2000 4400 0    60   Input ~ 0
 RES
 Wire Wire Line
-	11250 7850 12800 7850
-Connection ~ 11250 5400
-Wire Wire Line
-	11250 5400 11250 7850
-Wire Wire Line
 	7950 7900 8350 7900
 Wire Wire Line
 	7950 5000 7950 5250
@@ -1712,6 +1701,69 @@ Wire Wire Line
 Connection ~ 8500 3300
 Wire Wire Line
 	8500 3300 8100 3300
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 607DD3CF
+P 11250 8500
+F 0 "JP3" V 11296 8587 50  0000 L CNN
+F 1 "RAMCSJP" V 11205 8587 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11250 8500 50  0001 C CNN
+F 3 "~" H 11250 8500 50  0001 C CNN
+	1    11250 8500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP4
+U 1 1 607DEB6F
+P 12250 8500
+F 0 "JP4" V 12296 8587 50  0000 L CNN
+F 1 "ROMCSJP" V 12205 8587 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12250 8500 50  0001 C CNN
+F 3 "~" H 12250 8500 50  0001 C CNN
+	1    12250 8500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12800 7850 12650 7850
+Wire Wire Line
+	12650 7850 12650 8500
+Wire Wire Line
+	12650 8500 12400 8500
+Wire Wire Line
+	11250 4950 11250 8000
+Wire Wire Line
+	11850 5500 11850 8500
+Wire Wire Line
+	11850 8500 11400 8500
+Wire Wire Line
+	11250 8000 12250 8000
+Wire Wire Line
+	12250 8000 12250 8250
+Connection ~ 11250 8000
+Wire Wire Line
+	11250 8000 11250 8250
+Wire Wire Line
+	11250 8750 11250 9400
+Wire Wire Line
+	11250 9400 12850 9400
+Wire Wire Line
+	12250 8750 12250 9100
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 608D9FD8
+P 13050 9300
+F 0 "J3" H 13130 9342 50  0000 L CNN
+F 1 "MSX SLOT" H 13130 9251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13050 9300 50  0001 C CNN
+F 3 "~" H 13050 9300 50  0001 C CNN
+	1    13050 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 9100 12850 9100
+NoConn ~ 12850 9200
+NoConn ~ 12850 9300
+NoConn ~ 12850 9500
 Wire Bus Line
 	4300 2300 4300 5000
 Wire Bus Line

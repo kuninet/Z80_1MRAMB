@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6571)
+    (start_pass_no 5570)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -74,10 +74,9 @@
     /A1 /A2 /A3 /A4 /A5 /A6 /A8 /A9
     /A10 /A11 /A12 /A13 /A14 /A15 "Net-(U1-Pad1)" /DA1
     /DA0 "Net-(U4-Pad2)" "Net-(U4-Pad3)" /MEMA16 "Net-(U5-Pad5)" "Net-(U5-Pad3)" /MEMA15 "Net-(D3-Pad2)"
-    "Net-(J1-Pad5)" "Net-(J1-Pad6)" "Net-(J1-Pad7)" "Net-(J1-Pad8)" RES "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)"
-    "Net-(U2-Pad8)" "Net-(U2-Pad13)" "Net-(U2-Pad6)" "Net-(D3-Pad1)" "Net-(U1-Pad13)" "Net-(U3-Pad9)" "Net-(U3-Pad10)" "Net-(U3-Pad11)"
-    "Net-(J2-Pad1)" "Net-(U1-Pad8)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(U1-Pad4)" "Net-(J2-Pad2)" "Net-(U1-Pad10)"
-    "Net-(J1-Pad17)" "Net-(JP1-Pad1)" A7 "ADDR_SEL" "Net-(C9-Pad1)" "Net-(JP2-Pad2)"
+    RES "Net-(U2-Pad13)" "Net-(D3-Pad1)" "Net-(J2-Pad1)" "Net-(U1-Pad8)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)"
+    "Net-(U1-Pad4)" "Net-(J2-Pad2)" "Net-(U1-Pad10)" "Net-(JP1-Pad1)" A7 "ADDR_SEL" "Net-(C9-Pad1)" "Net-(JP2-Pad2)"
+    "Net-(J3-Pad4)" "Net-(J3-Pad1)" "Net-(JP3-Pad3)" "Net-(JP3-Pad2)" "Net-(JP4-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
