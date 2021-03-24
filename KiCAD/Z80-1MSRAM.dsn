@@ -34,72 +34,72 @@
   )
   (placement
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place JP4 180500 -66000 front 90 (PN ROMCSJP))
-      (place JP3 180500 -62500 front 90 (PN RAMCSJP))
+      (place JP4 194000 -74500 front 0 (PN ROMCSJP))
+      (place JP3 197500 -74500 front 0 (PN RAMCSJP))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical
-      (place J3 159000 -62500 front 90 (PN "MSX SLOT"))
+      (place J3 197000 -91840 front 0 (PN "MSX SLOT"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical::1
-      (place JP2 105400 -81500 front 0 (PN 16k/32k))
-      (place JP1 110327 -104480 front 90 (PN A7_Jumper))
+      (place JP2 105120 -87860 front 0 (PN 16k/32k))
+      (place JP1 110387 -114590 front 90 (PN A7_Jumper))
     )
     (component Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm
-      (place C9 129921 -114610 front 270 (PN 22p))
+      (place C9 122761 -126220 front 270 (PN 22p))
     )
     (component "Package_TO_SOT_THT:TO-92L_Inline_Wide"
-      (place Q1 132654 -116210 front 0 (PN 2SC1815))
+      (place Q1 126160 -127910 front 0 (PN 2SC1815))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R1 119888 -121976 front 180 (PN 1k))
-      (place R4 141605 -116515 front 0 (PN 100k))
+      (place R1 182718 -81776 front 180 (PN 1k))
+      (place R4 118420 -122260 front 270 (PN 100k))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::1
-      (place R2 119888 -125024 front 180 (PN 1k))
-      (place R5 155575 -116515 front 0 (PN 1k))
-      (place R3 109220 -109784 front 0 (PN 1k))
+      (place R2 182718 -84824 front 180 (PN 1k))
+      (place R5 135640 -127690 front 0 (PN 1k))
+      (place R3 182690 -87900 front 180 (PN 1k))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical
-      (place J2 116904 -96195 front 270 (PN "I/O ADDR SEL"))
+      (place J2 116964 -106305 front 270 (PN "I/O ADDR SEL"))
     )
     (component LED_THT:LED_D3.0mm
-      (place D3 125870 -114532 front 270 (PN LED))
+      (place D3 186410 -74470 front 270 (PN LED))
     )
     (component "Package_DIP:DIP-14_W7.62mm_Socket"
-      (place U2 139764 -93210.5 front 0 (PN 74HC74))
+      (place U2 137534 -105490 front 0 (PN 74HC74))
     )
     (component "Housings_DIP:DIP-28_W15.24mm_Socket"
-      (place U7 180340 -75875 front 0 (PN 28C256))
+      (place U7 174340 -93875 front 0 (PN 28C256))
     )
     (component Pin_Headers:Pin_Header_Angled_2x20
-      (place J1 175260 -121595 front 270 (PN "SBC8080 BUS"))
+      (place J1 125000 -69500 front 90 (PN "SBC8080 BUS"))
     )
     (component "LEDs:LED-3MM"
-      (place D1 111920 -114592 front 270 (PN LED))
-      (place D2 118370 -114672 front 270 (PN LED))
+      (place D1 173910 -74442 front 270 (PN LED))
+      (place D2 180360 -74522 front 270 (PN LED))
     )
     (component "Housings_DIP:DIP-14_W7.62mm_Socket"
-      (place U1 139890 -69525 front 0 (PN 74HC02))
-      (place U4 125158 -69588.5 front 0 (PN 74HC04))
-      (place U5 124904 -93337.5 front 0 (PN 74HC00))
+      (place U1 137660 -81805 front 0 (PN 74HC02))
+      (place U4 122928 -81868.5 front 0 (PN 74HC04))
+      (place U5 122674 -105618 front 0 (PN 74HC00))
     )
     (component "Housings_DIP:DIP-16_W7.62mm_Socket"
-      (place U3 109230 -71910 front 0 (PN 74HC139))
+      (place U3 109290 -82020 front 0 (PN 74HC139))
     )
     (component "Housings_DIP:DIP-32_W15.24mm_Socket"
-      (place U6 157480 -70795 front 0 (PN 628128))
+      (place U6 151480 -88795 front 0 (PN 628128))
     )
     (component Capacitors_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm
-      (place C1 147920 -65990 front 180 (PN 0.1u))
-      (place C2 147828 -89781.5 front 180 (PN 0.1u))
-      (place C3 117390 -68500 front 180 (PN 0.1u))
-      (place C4 133096 -65778.5 front 180 (PN 0.1u))
-      (place C5 133032 -89908.5 front 180 (PN 0.1u))
-      (place C6 172720 -67620 front 180 (PN 0.1u))
-      (place C7 195540 -72700 front 180 (PN 0.1u))
+      (place C1 145690 -78270 front 180 (PN 0.1u))
+      (place C2 145598 -102062 front 180 (PN 0.1u))
+      (place C3 117450 -78610 front 180 (PN 0.1u))
+      (place C4 130866 -78058.5 front 180 (PN 0.1u))
+      (place C5 130880 -102050 front 180 (PN 0.1u))
+      (place C6 167230 -85200 front 180 (PN 0.1u))
+      (place C7 190060 -90250 front 180 (PN 0.1u))
     )
     (component Capacitor_THT:CP_Radial_D5.0mm_P2.50mm
-      (place C8 185420 -122865 front 0 (PN 10u))
+      (place C8 113000 -66500 front 0 (PN 10u))
     )
     (component MountingHole:MountingHole_3.2mm_M3
       (place MH1 105500 -64500 front 0 (PN MountingHole))
@@ -1257,15 +1257,12 @@
     (class kicad_default "" /A0 /A1 /A10 /A11 /A12 /A13 /A14 /A15 /A2 /A3
       /A4 /A5 /A6 /A8 /A9 /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7 /DA0 /DA1 /MEMA15
       /MEMA16 A7 ADDR_SEL "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
-      "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(J1-Pad17)"
-      "Net-(J1-Pad22)" "Net-(J1-Pad23)" "Net-(J1-Pad24)" "Net-(J1-Pad5)" "Net-(J1-Pad6)"
-      "Net-(J1-Pad7)" "Net-(J1-Pad8)" "Net-(J2-Pad1)" "Net-(J2-Pad2)" "Net-(J2-Pad3)"
-      "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J3-Pad1)" "Net-(J3-Pad2)" "Net-(J3-Pad3)"
-      "Net-(J3-Pad4)" "Net-(J3-Pad5)" "Net-(JP1-Pad1)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
-      "Net-(JP3-Pad3)" "Net-(JP4-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad10)" "Net-(U1-Pad13)"
-      "Net-(U1-Pad4)" "Net-(U1-Pad8)" "Net-(U2-Pad13)" "Net-(U2-Pad6)" "Net-(U2-Pad8)"
-      "Net-(U3-Pad10)" "Net-(U3-Pad11)" "Net-(U3-Pad9)" "Net-(U4-Pad2)" "Net-(U4-Pad3)"
-      "Net-(U5-Pad3)" "Net-(U5-Pad5)" RES ~IOWR ~MEMRD ~MEMWR
+      "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(J2-Pad1)"
+      "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J3-Pad1)"
+      "Net-(J3-Pad4)" "Net-(JP1-Pad1)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)" "Net-(JP3-Pad3)"
+      "Net-(JP4-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad10)" "Net-(U1-Pad4)" "Net-(U1-Pad8)"
+      "Net-(U2-Pad13)" "Net-(U4-Pad2)" "Net-(U4-Pad3)" "Net-(U5-Pad3)" "Net-(U5-Pad5)"
+      RES ~IOWR ~MEMRD ~MEMWR
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
