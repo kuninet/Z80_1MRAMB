@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.4-0-10_14)*
-G04 #@! TF.CreationDate,2021-03-25T21:19:08+09:00*
+G04 #@! TF.CreationDate,2021-03-25T21:32:33+09:00*
 G04 #@! TF.ProjectId,Z80-1MSRAM,5a38302d-314d-4535-9241-4d2e6b696361,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.4-0-10_14)) date 2021-03-25 21:19:08*
+G04 Created by KiCad (PCBNEW (5.1.4-0-10_14)) date 2021-03-25 21:32:33*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
