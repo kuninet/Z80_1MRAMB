@@ -24,6 +24,10 @@
       (path pcb 0  200000 -135000  100000 -135000  100000 -60000  200000 -60000
             200000 -135000)
     )
+    (keepout "" (polygon F.Cu 0  200000 -60000  199500 -60000  199500 -135000  200000 -135000
+            200000 -60000))
+    (keepout "" (polygon B.Cu 0  200000 -60000  199500 -60000  199500 -135000  200000 -135000
+            200000 -60000))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -34,11 +38,11 @@
   )
   (placement
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place JP4 194000 -74500 front 0 (PN ROMCSJP))
-      (place JP3 197500 -74500 front 0 (PN RAMCSJP))
+      (place JP4 192500 -74000 front 0 (PN ROMCSJP))
+      (place JP3 196000 -74000 front 0 (PN RAMCSJP))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical
-      (place J3 197000 -91840 front 0 (PN "MSX SLOT"))
+      (place J3 196500 -91840 front 0 (PN "MSX SLOT"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical::1
       (place JP2 105120 -87860 front 0 (PN 16k/32k))
